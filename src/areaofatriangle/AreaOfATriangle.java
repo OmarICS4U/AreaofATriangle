@@ -1,7 +1,7 @@
 /*
 Omar Sayyed
 Feb/19/2020
-Calculates the area of a scalene triangle
+Calculates the area of a scalene triangle given two sidelengths and an interior angle
  */
 
 package areaofatriangle;
@@ -26,7 +26,7 @@ public class AreaOfATriangle {
         inputSideB = JOptionPane.showInputDialog("Please enter sidelength b");
         sideB = Double.parseDouble(inputSideB);
         //collect angle C in radians
-        inputAngleC = JOptionPane.showInputDialog("Please enter an angle for C, in radians");
+        inputAngleC = JOptionPane.showInputDialog("Please enter the interior angle, C, in radians");
         angleC = Double.parseDouble(inputAngleC);
         //calculate the area
         area = ((sideA * sideB * Math.sin(angleC))/2);
